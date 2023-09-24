@@ -8,30 +8,66 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>健身網站</title>
+    <style>
+        /* class => . */
+        .banner {
+            background-color: #666666;
+            color: white;
+            padding: 12px;
+            /* 1rem => 16px */
+            font-size: 24px;
+            font-family: "標楷體", Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-bottom: 6px;
+            /* 上，右，下，左 */
+            margin: 6px 20px 12px 24px;
+        }
+
+        .image-style {
+            background-color: black;
+            padding: 12px;
+            border-radius: 6px;
+            width: 28%;
+
+        }
+
+        .image-list {
+            text-align: center;
+            padding: 12px;
+            background-color: #666666;
+            margin-bottom: 6px;
+        }
+    </style>
+
 </head>
 
 <!--可視範圍 網站會自動修補錯誤 <h6></h1>-->
 <!--p 段落標籤  em 斜體字  b 粗體字 u 底線 -->
 
 <body>
-    <p>
-    <h1>健身，英文稱為<u>workout</u></h1>健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，<br>以及提高協調和控制身體各部分的能力來使我們的身體更強健。
-
-    除了塑造好身材，透過健身可以刺激我們身體的肌肉，<br>再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。
-    </p>
-    <p>
-        <em>
-            如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，<br>依舊在
-            舞臺上或者是電影螢幕上綻放光彩。答案就是堅持<b><span>運動健身!</span></b>
-        </em>
-    </p>
+    <p style="background-color: rgb(224, 217, 207);">
+    <h1
+        style="color: blue;background-color: #6ebcee; padding: 24px; margin: 0px; text-align: center; border: 2px solid black;">
+        健身，英文稱為<u>workout</u></h1>
+    <div style="background-color: rgb(233, 215, 163);">
+        <p>
+            健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，<br>以及提高協調和控制身體各部分的能力來使我們的身體更強健。
+            除了塑造好身材，透過健身可以刺激我們身體的肌肉，<br>再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。
+            <em>
+                如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，他們是如何做到年過50/60歲，<br>依舊在
+                舞臺上或者是電影螢幕上綻放光彩。答案就是堅持<b><span
+                        style="color: red;background-color: chartreuse; font-size: 32px;">運動健身!</span></b>
+            </em>
+        </p>
+    </div>
     <hr>
-    <a target="_blank" href="https://fitnesstwenty.com/benefits-of-workout/">
+    <a target=" _blank" href="https://fitnesstwenty.com/benefits-of-workout/">
         <img src="https://fitnesstwenty.com/wp-content/uploads/2020/10/71-1024x320.jpg" width="100%"
             alt="健身的10個好處！（這些好處說明你該健身了！）">
     </a>
     <!-- ul 無序列表 ol 有序列表 <li>內文-->
-    <h2>&spades;健身的10個好處</h2>
+    <h2
+        style="background-color: rgb(177, 139, 221); color: rgb(216, 65, 128); padding: 16px; margin: 0px; text-align: center;">
+        &spades;健身的10個好處></h2>
     <ol type="1">
         <li>增加基礎代謝率</li>
         <li>預防疾病和提高免疫力</li>
@@ -45,11 +81,13 @@
         <li>增加肌肉助於減肥</li>
     </ol>
     <!-- 500pixel    -->
-    <img src="./images/charles-gaudreault-xXofYCc3hqc-unsplash.jpg" alt="" height="300px">
-    <img src="./images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg" alt="" height="300px">
-    <img src="./images/sushil-ghimire-5UbIqV58CW8-unsplash.jpg" alt="" height="300px">
+    <div class="image-list">
+        <img class="image-style" src="./images/charles-gaudreault-xXofYCc3hqc-unsplash.jpg" alt="" height="300px">
+        <img class="image-style" src="./images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg" alt="" height="300px">
+        <img class="image-style" src="./images/sushil-ghimire-5UbIqV58CW8-unsplash.jpg" alt="" height="300px">
+    </div>
     <hr>
-    <h2>&hearts;好文章連結</h2>
+    <div class="banner">&hearts;好文章連結</div>
     <a target="_blank" href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6">
         <b>健身初學者必看！10個常見的健身迷思</b><br></a>
     <!-- target= 預設"_self"、另開分頁"_blank"-->
@@ -82,7 +120,7 @@
             https://fitnesstwenty.com/benefits-of-workout/
         </a> </small>
     <hr>
-    <h2>&diams;一天所需卡路里</h2>
+    <div class="banner">&diams;一天所需卡路里</div>
     <table width="100%" border="0" cellspacing="0" cellpadding="0"
         style="width: 100%; border-collapse: collapse; border: 1px solid #666666;"
         summary="根據每日活動量及為了調整體重至健康體重，可計算每日建議攝取熱量">
@@ -196,7 +234,7 @@
     <b>計算所需熱量:</b>
     因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
     <hr>
-    <h2>健身影片</h2>
+    <div class="banner">健身影片</div>
     <iframe width="100%" height="457px" src="https://www.youtube.com/embed/LmrKejHOaG4"
         title="男女適用!! 20分鐘 站立式全身燃脂運動、不跳躍、不傷膝、簡單有效" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

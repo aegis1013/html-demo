@@ -2,7 +2,7 @@
 *.o
 *.a
 *.so
-
+videos/
 # Folders
 _obj
 _test

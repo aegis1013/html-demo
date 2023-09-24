@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="計算BMI" content="width=device-width, initial-scale=1.0">
+    <title>BMI計算機</title>
+</head>
+
+<body>
+    <h2>
+        <a target="_blank" href="">
+            <b>計算BMI:</b></a>
+    </h2>
+    一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。
+    <br>
+    <b>計算所需熱量:</b>
+    因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
+    <hr>
+    <!--ID給前端用 NAME給後端用 
+        method="get or post"
+         placeholder="提示字元"  
+         required必要值-->
+    <h2>BMI計算機</h2>
+    <form action="" method="get">
+        <label for="username">姓名:</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">密碼:</label>
+        <input type="password" id="password" name="password" required><br>
+        <label for="birthday">生日:</label>
+        <input type="date" id="birthday" name="birthday" required><br>
+        <label for="height">身高:</label>
+        <input type="number" id="height" name="height" value="170" step="0.1" required><br>
+        <label for="weight">體重:</label>
+        <input type="number" id="weight" name="weight" value="60" step="0.1" required><br>
+        <label for="email">信箱:</label>
+        <input type="email" id="email" name="email" placeholder="請輸入email" required><br>
+        <label for="file">檔案</label>
+        <input type="file" id="file" name="file">
+        <p><button>計算</button></p>
+    </form>
+    <a target="_blank" href="./index.html">
+        <b>返回主頁</b></a>
+</body>
+
+</html>
